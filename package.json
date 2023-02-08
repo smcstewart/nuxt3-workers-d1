@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .output dist && npx nuxi clean",
+    "clean:all": "pnpm clean && rm -rf node_modules",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20230115.0",
+    "nuxt": "3.1.2",
+    "wrangler": "2.9.1"
+  }
+}

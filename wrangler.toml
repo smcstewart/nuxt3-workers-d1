@@ -1,0 +1,14 @@
+name = "nuxt3-workers-d1"
+compatibility_date = "2023-02-08"
+main = "./.output/server/index.mjs"
+
+account_id = "<your-account-id>"
+
+d1_databases = [{ binding = "DB", database_name = "tester", database_id = "<id>", preview_database_id = "<id>" }]
+kv_namespaces = [{ binding = "tester", id = "<id>", preview_id = "<id>" }]
+vars = { STAGE = "dev" }
+workers_dev = true
+
+[build]
+command = "npm run build"
+
